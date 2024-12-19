@@ -1,0 +1,340 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PPRightGroteskText-Regular';
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFFBF8;
+    padding: 0;
+    margin: 0;
+}
+
+mark {
+    background-color: #FFA10B;
+}
+
+.vl {
+    border-left: 2px solid #FC0042;
+    height: 1500px;
+    margin-left: 100px;
+    border-right: 2px solid #FC0042;
+    height: 100%;
+    margin-right: 100px;
+}
+
+/* Header */
+header {
+    background: #FFFBF8;
+    border-style: solid;
+    border-color: #FC0042;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 4.5rem;
+    padding: 0.5rem;
+    padding-right: 100px;
+}
+
+nav ul li a {
+    color: #FC0042;
+    text-decoration: none;
+    font-family: 'PPRightGrotesk-TightMedium';
+    font-size: xx-large;
+    padding: 3.5;
+}
+
+nav ul li a:hover {
+    color: #FFA10B;
+}
+
+.nav{
+    display:flex;
+    flex-direction: row;
+}
+
+li{
+    padding-left:35px;
+    padding-right:35px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: left;
+    padding: 3rem;
+    background: #FFFBF8;
+    color: #333;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+    font-family: 'PPRightGrotesk-WideMedium';
+    font-size: x-large;
+
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: 'PPRightGrotesk-SpatialBlack';
+    color: #FC0042;
+}
+
+.button2 {
+    /* border-radius: 40px; */
+    background-color: #FFFBF8;
+    border: 1.5px solid #FC0042;
+    width: 300px;
+    font-family: 'PPRightGrotesk-SpatialFine';
+    font-size: 24px;
+    color:#FC0042;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.button3 {
+    /* border-radius: 60px; */
+    background-color: #FFFBF8;
+    border: 1.5px solid #FC0042;
+    width: 300px;
+    font-family: 'PPRightGrotesk-SpatialFine';
+    font-size: 24px;
+    color:#FC0042;
+    padding: 13px;
+    text-decoration: none;
+}
+
+/* About Section */
+.about, .projects, .contact {
+    padding: 5rem;
+    text-align: left;
+}
+
+.about h2, .projects h2, .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family:'PPRightGrotesk-WideMedium';
+}
+
+.about2 {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    width: 100%;
+    overflow: hidden;
+    gap: 4.5rem;
+}
+
+.blurb {
+    flex-direction: 1;
+}
+
+.image {
+    flex-direction: 1;
+    padding-top: 4rem;
+}
+
+/* Projects Section */
+/* .project {
+    margin: 1rem auto;
+    padding: 1rem;
+    background: #fff;
+    max-width: 600px;
+} */
+
+.projects {
+    border: solid #FC0042;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+  
+  /* Individual Cards */
+  .card-container {
+    display: flex;
+    flex-direction: row; /* Cards side by side */
+    width: 100%; /* Adjust as needed */
+    height: 300px; /* Total height */
+    overflow: hidden; /* Ensure no overflow when scaling */
+  }
+  
+  /* Cards */
+  .card {
+    flex: 1; /* All cards start as equal sizes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FC0042;
+    color: white;
+    font-size: 24px;
+    transition: flex-grow 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  /* Hover Effect */
+  .card:hover {
+    flex-grow: 2; /* Increase the size of the hovered card */
+    background-color: #FF4D6A; /* Optional: change the background for hover */
+  }
+  
+  /* Other Cards Adjust */
+  .card-container .card:not(:hover) {
+    flex-grow: 0.8; /* Shrink other cards slightly */
+  }
+
+/* Contact Section */
+
+.contact {
+    display: flex;
+    border: solid #FC0042;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    padding-bottom: 1rem;
+}
+
+.contact .button {
+    background: #6c5ce7;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.info {
+    flex: 1;
+    padding: 3rem;
+}
+
+.button2:hover {
+    box-shadow: 0 10px 10px 0 #FFA10B,0 5px 50px 0 #FFA10B;
+}
+
+.button3:hover {
+    box-shadow: 0 10px 10px 0 #FFA10B,0 5px 50px 0 #FFA10B;
+}
+
+.read-more {
+    font-family: 'PPRightGrotesk-WideMedium';
+    text-decoration: underline;
+    padding: 1rem;
+    color: #333;
+}
+
+.read-more:hover {
+    color: #FFA10B;
+}
+
+.heading {
+    font-family: 'PPRightGrotesk-WideMedium';
+    font-size: xx-large;
+}
+
+.subheading {
+    font-family: 'PPRightGrotesk-WideMedium';
+}
+
+.branding {
+    font-family: 'PPRightGroteskText-Regular';
+    background-color: #DDF400;
+    padding: 4px;
+}
+
+.ux {
+    font-family: 'PPRightGroteskText-Regular';
+    background-color: #E35FFF;
+    padding: 4px;
+}
+
+.resume {
+    padding: 4rem;
+    padding-top: 4rem;
+    /* width: 10%; */
+}
+
+
+/* Form */
+.form-container {
+    flex: 1;
+    /* background-color: #FFFBF8; */
+    margin: 1rem auto;
+    padding: 1rem;
+    /* border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    max-width: 800px;
+    width: 40%;
+  }
+  
+  /* Form Elements */
+  form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    font-family: 'PPRightGrotesk-WideMedium';
+  }
+  
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+  }
+  
+  form input::placeholder,
+  form textarea::placeholder {
+    color: #aaa;
+  }
+  
+  /* Button */
+  form button {
+    background-color: #FC0042;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: 'PPRightGrotesk-SpatialFine';
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #FFA10B;
+  }
+
+/* Footer */
+footer {
+    background: #FFA10B;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-family: 'PPRightGrotesk-SpatialFine';
+}
